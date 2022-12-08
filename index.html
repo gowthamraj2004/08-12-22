@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="root">
+        <p class="para"></p>
+        <p class="para"></p>
+        <p class="para"></p>
+        <p class="para"></p>
+        <p class="para">normal text <i>italic text </i> <strong><i>bold and italic</i></strong></p>
+     </div>
+
+</body>
+<script>
+    console.log("hello world");
+
+    document.title="hello world";
+
+    let message = 'hello world!'
+
+    //alert(message);
+
+    document.getElementsByClassName("para")[0].innerHTML = "Hello world"
+    document.getElementsByClassName("para")[1].innerHTML = "jAVa sCript"
+    document.getElementsByClassName("para")[2].innerHTML = "Skcet"
+    document.getElementById("root").style.color="red"
+    
+    let name = document.getElementsByClassName("para")[4].innerHTML
+
+    console.log(name) 
+</script>
+</html>
